@@ -1,0 +1,49 @@
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Backbone tutorial</title>
+    <script type="text/template" class="blogs-list-template">
+      <td><span class="author"><%= author %></span></td>
+      <td><span class="title"><%= title %></span></td>
+      <td><span class="url"><%= url %></span></td>
+      <td>
+        <button class="btn btn-warning edit-blog">Edit</button>
+        <button class="btn btn-danger delete-blog">Delete</button>
+        <button class="btn btn-success update-blog" style="display:none">Update</button>
+        <button class="btn btn-danger cancel" style="display:none">Cancel</button>
+      </td>
+    </script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <div class="container">
+      <hi>Backbone tutorial app</hi>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>URL</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td><input class="form-control author-input"></td>
+            <td><input class="form-control title-input"></td>
+            <td><input class="form-control url-input"></td>
+            <td><button class="btn btn-primary add-blog">Add</button></td>
+          </tr>
+        </thead>
+        <tbody class="blogs-list"></tbody>
+      </table>
+    </div>
+    <script src="/assets/jquery-3.5.1.min.js"></script>
+    <script src="/assets/underscore-min.js"></script>
+    <script src="/assets/backbone-min.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
